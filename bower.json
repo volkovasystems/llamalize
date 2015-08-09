@@ -1,0 +1,30 @@
+{
+  "name": "llamalize",
+  "main": "llamalize.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/volkovasystems/llamalize",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "description": "Transform any human readable alphanumeric string divided by certain characters into camel form.",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "camelize",
+    "llamalize",
+    "camel-case-format"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "harden": "~0.2.0"
+  }
+}
