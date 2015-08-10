@@ -42,7 +42,7 @@
 */
 
 if( !( typeof window != "undefined" &&
-	"harden" in window )
+	"harden" in window ) )
 {
 	var harden = require( "harden" );
 }
