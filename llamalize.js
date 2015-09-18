@@ -78,7 +78,7 @@ var llamalize = function llamalize( text, formal ){
 			.replace( llamalize.FIRST_LETTER_PATTERN,
 				function onReplaced( match ){
 					if( formal ){
-						return match.toLowerCase( );
+						return match.toUpperCase( );
 
 					}else{
 						return match;
