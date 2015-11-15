@@ -63,6 +63,13 @@ var llamalize = function llamalize( text, formal ){
 		@end-meta-configuration
 	*/
 
+	if( !text || 
+		text === "" ||
+		typeof text != "string" )
+	{
+		return text;
+	}
+
 	if( llamalize.TEXT_PATTERN.test( text ) ){
 		return text
 			.toLowerCase( )

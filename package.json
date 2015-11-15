@@ -1,6 +1,6 @@
 {
   "name": "llamalize",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Transform any human readable alphanumeric string divided by certain characters into camel form.",
   "main": "llamalize.js",
   "scripts": {
