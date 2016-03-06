@@ -103,7 +103,7 @@ harden.bind( llamalize )
 
 harden.bind( llamalize )
 	( "TERM_PATTERN",
-		/^[a-zA-Z0-9]|([-_ ])[a-zA-Z0-9]/g );
+		/([-_ ])[a-zA-Z0-9]/g );
 
 harden.bind( llamalize )
 	( "FIRST_LETTER_PATTERN",
