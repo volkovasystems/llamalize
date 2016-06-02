@@ -1,8 +1,12 @@
+"use strict";
+
 /*:
 	@module-license:
 		The MIT License (MIT)
+		@mit-license
 
-		Copyright (c) 2014 Richeve Siodina Bebedor
+		Copyright (@c) 2016 Richeve Siodina Bebedor
+		@email: richeve.bebedor@gmail.com
 
 		Permission is hereby granted, free of charge, to any person obtaining a copy
 		of this software and associated documentation files (the "Software"), to deal
@@ -22,35 +26,40 @@
 		OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 		SOFTWARE.
 	@end-module-license
-	
+
 	@module-configuration:
 		{
-			"packageName": "llamalize",
-			"fileName": "llamalize.js",
-			"moduleName": "llamalize",
-			"authorName": "Richeve S. Bebedor",
-			"authorEMail": "richeve.bebedor@gmail.com",
-			"repository": "git@github.com:volkovasystems/llamalize.git",
-			"testCase": "llamalize-test.js",
-			"isGlobal": true
+			"package": "llamalize",
+			"file": "llamalize.js",
+			"path": "llamalize/llamalize.js",
+			"module": "llamalize",
+			"author": "Richeve S. Bebedor",
+			"eMail": "richeve.bebedor@gmail.com",
+			"repository": "https://github.com/volkovasystems/llamalize.git",
+			"test": "llamalize-test.js",
+			"global": true
 		}
 	@end-module-configuration
 
 	@module-documentation:
 
-	@end-module-documentation	
+	@end-module-documentation
+
+	@include:
+		{
+			"harden": "harden"
+		}
+	@end-include
 */
 
-if( !( typeof window != "undefined" &&
-	"harden" in window ) )
-{
+if( typeof window == "undefined" ){
 	var harden = require( "harden" );
 }
 
-if( typeof window != "undefined" && 
+if( typeof window != "undefined" &&
 	!( "harden" in window ) )
 {
-	throw new Error( "harden is not defined" ); 
+	throw new Error( "harden is not defined" );
 }
 
 var llamalize = function llamalize( text, formal ){
@@ -63,7 +72,7 @@ var llamalize = function llamalize( text, formal ){
 		@end-meta-configuration
 	*/
 
-	if( !text || 
+	if( !text ||
 		text === "" ||
 		typeof text != "string" )
 	{
@@ -77,7 +86,7 @@ var llamalize = function llamalize( text, formal ){
 				function onReplaced( match, divideCharacter ){
 					if( divideCharacter ){
 						return match.replace( divideCharacter, "" ).toUpperCase( );
-						
+
 					}else{
 						return match.toUpperCase( );
 					}
@@ -91,32 +100,21 @@ var llamalize = function llamalize( text, formal ){
 						return match;
 					}
 				} );
-			
+
 	}else{
 		return text;
 	}
 };
 
 harden.bind( llamalize )
-	( "TEXT_PATTERN",
-		/^(?:[a-zA-Z0-9][a-zA-Z0-9]*[-_ ])*[a-zA-Z0-9][a-zA-Z0-9]*.*$/ );
+	( "TEXT_PATTERN", /^(?:[a-zA-Z0-9][a-zA-Z0-9]*[-_ ])*[a-zA-Z0-9][a-zA-Z0-9]*.*$/ );
 
 harden.bind( llamalize )
-	( "TERM_PATTERN",
-		/([-_ ])[a-zA-Z0-9]/g );
+	( "TERM_PATTERN", /([-_ ])[a-zA-Z0-9]/g );
 
 harden.bind( llamalize )
-	( "FIRST_LETTER_PATTERN",
-		/^[a-zA-Z]/ );
+	( "FIRST_LETTER_PATTERN", /^[a-zA-Z]/ );
 
-if( typeof module != "undefined" ){ 
-	module.exports = llamalize; 
-}
-
-if( typeof global != "undefined" ){
-	harden
-		.bind( llamalize )( "globalize", 
-			function globalize( ){
-				harden.bind( global )( "llamalize", llamalize );
-			} );
+if( typeof module != "undefined" ){
+	module.exports = llamalize;
 }
