@@ -1,7 +1,7 @@
 {
   "name": "llamalize",
+  "version": "0.2.0",
   "main": "llamalize.js",
-  "version": "0.1.2",
   "homepage": "https://github.com/volkovasystems/llamalize",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
@@ -25,6 +25,7 @@
     "tests"
   ],
   "dependencies": {
-    "harden": "^0.3.1"
+    "harden": "^0.3.3",
+    "titlelize": "^0.2.0"
   }
 }

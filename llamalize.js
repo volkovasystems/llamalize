@@ -1,6 +1,6 @@
 "use strict";
 
-/*:
+/*;
 	@module-license:
 		The MIT License (MIT)
 		@mit-license
@@ -47,13 +47,15 @@
 
 	@include:
 		{
-			"harden": "harden"
+			"harden": "harden",
+			"titlelize": "titlelize"
 		}
 	@end-include
 */
 
 if( typeof window == "undefined" ){
 	var harden = require( "harden" );
+	var titlelize = require( "titlelize" );
 }
 
 if( typeof window != "undefined" &&
@@ -62,8 +64,14 @@ if( typeof window != "undefined" &&
 	throw new Error( "harden is not defined" );
 }
 
+if( typeof window != "undefined" &&
+	!( "titlelize" in window ) )
+{
+	throw new Error( "titlelize is not defined" );
+}
+
 var llamalize = function llamalize( text, formal ){
-	/*:
+	/*;
 		@meta-configuration:
 			{
 				"text:required": "string",
@@ -79,41 +87,30 @@ var llamalize = function llamalize( text, formal ){
 		return text;
 	}
 
-	if( llamalize.TEXT_PATTERN.test( text ) ){
-		return text
-			.toLowerCase( )
-			.replace( llamalize.TERM_PATTERN,
-				function onReplaced( match, divideCharacter ){
-					if( divideCharacter ){
-						return match.replace( divideCharacter, "" ).toUpperCase( );
+	text = titlelize( text )
+		.replace( llamalize.DROP_PATTERN, "" )
+		.replace( llamalize.SPACE_PATTERN, "" );
 
-					}else{
-						return match.toUpperCase( );
-					}
-				} )
-			.replace( llamalize.FIRST_LETTER_PATTERN,
-				function onReplaced( match ){
-					if( formal ){
-						return match.toUpperCase( );
-
-					}else{
-						return match;
-					}
-				} );
+	if( formal ){
+		return text;
 
 	}else{
-		return text;
+		return text
+			.replace( llamalize.INFORMAL_PATTERN,
+				function onReplace( match ){
+					return match.toLowerCase( );
+				} );
 	}
 };
 
 harden.bind( llamalize )
-	( "TEXT_PATTERN", /^(?:[a-zA-Z0-9][a-zA-Z0-9]*[-_ ])*[a-zA-Z0-9][a-zA-Z0-9]*.*$/ );
+	( "DROP_PATTERN", /^[0-9]+/ );
 
 harden.bind( llamalize )
-	( "TERM_PATTERN", /([-_ ])[a-zA-Z0-9]/g );
+	( "SPACE_PATTERN", /\s+/g );
 
 harden.bind( llamalize )
-	( "FIRST_LETTER_PATTERN", /^[a-zA-Z]/ );
+	( "INFORMAL_PATTERN", /^[A-Z]/ );
 
 if( typeof module != "undefined" ){
 	module.exports = llamalize;
