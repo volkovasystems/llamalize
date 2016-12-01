@@ -34,41 +34,36 @@
 			"path": "llamalize/llamalize.js",
 			"module": "llamalize",
 			"author": "Richeve S. Bebedor",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+			],
 			"eMail": "richeve.bebedor@gmail.com",
 			"repository": "https://github.com/volkovasystems/llamalize.git",
 			"test": "llamalize-test.js",
 			"global": true
 		}
 	@end-module-configuration
-
+		Transform any human readable alphanumeric string divided by certain
+		characters into camel form. I named it llamalize because camelize is
+		too mainstream. And llamas are way better
 	@module-documentation:
 
 	@end-module-documentation
 
 	@include:
 		{
+			"falzy": "falzy",
 			"harden": "harden",
+			"protype": "protype",
 			"titlelize": "titlelize"
 		}
 	@end-include
 */
 
-if( typeof window == "undefined" ){
-	var harden = require( "harden" );
-	var titlelize = require( "titlelize" );
-}
-
-if( typeof window != "undefined" &&
-	!( "harden" in window ) )
-{
-	throw new Error( "harden is not defined" );
-}
-
-if( typeof window != "undefined" &&
-	!( "titlelize" in window ) )
-{
-	throw new Error( "titlelize is not defined" );
-}
+const falzy = require( "falzy" );
+const harden = require( "harden" );
+const protype = require( "protype" );
+const titlelize = require( "titlelize" );
 
 var llamalize = function llamalize( text, formal ){
 	/*;
@@ -80,9 +75,8 @@ var llamalize = function llamalize( text, formal ){
 		@end-meta-configuration
 	*/
 
-	if( !text ||
-		text === "" ||
-		typeof text != "string" )
+	if( falzy( text ) ||
+		!protype( text, STRING ) )
 	{
 		return text;
 	}
@@ -112,6 +106,4 @@ harden.bind( llamalize )
 harden.bind( llamalize )
 	( "INFORMAL_PATTERN", /^[A-Z]/ );
 
-if( typeof module != "undefined" ){
-	module.exports = llamalize;
-}
+module.exports = llamalize;
