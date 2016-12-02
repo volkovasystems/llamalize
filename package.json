@@ -1,6 +1,6 @@
 {
   "name": "llamalize",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Transform any human readable alphanumeric string divided by certain characters into camel form.",
   "main": "llamalize.js",
   "scripts": {
@@ -16,6 +16,9 @@
     "camel-case-format"
   ],
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "contributors": [
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/volkovasystems/llamalize/issues"

@@ -65,7 +65,7 @@ const harden = require( "harden" );
 const protype = require( "protype" );
 const titlelize = require( "titlelize" );
 
-var llamalize = function llamalize( text, formal ){
+const llamalize = function llamalize( text, formal ){
 	/*;
 		@meta-configuration:
 			{
