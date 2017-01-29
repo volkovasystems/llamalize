@@ -1,6 +1,6 @@
 {
   "name": "llamalize",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "main": "llamalize.js",
   "support": "llamalize.support.js",
   "deploy": "llamalize.deploy.js",
@@ -28,9 +28,9 @@
     "tests"
   ],
   "dependencies": {
-    "falzy": "^0.7.0",
-    "harden": "^0.12.0",
-    "protype": "^0.7.0",
-    "titlelize": "^0.4.0"
+    "falzy": "^0.10.0",
+    "harden": "^0.14.0",
+    "protype": "^0.11.0",
+    "titlelize": "^0.7.0"
   }
 }
