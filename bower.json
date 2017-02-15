@@ -1,7 +1,8 @@
 {
   "name": "llamalize",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "main": "llamalize.deploy.js",
+  "support": "llamalize.support.js",
   "homepage": "https://github.com/volkovasystems/llamalize",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
@@ -26,9 +27,9 @@
     "tests"
   ],
   "dependencies": {
-    "falzy": "^0.11.0",
-    "harden": "^0.14.0",
-    "protype": "^0.15.0",
-    "titlelize": "^0.8.0"
+    "falzy": "^0.13.0",
+    "harden": "^0.16.0",
+    "protype": "^0.17.0",
+    "titlelize": "^0.9.0"
   }
 }

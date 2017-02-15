@@ -1,13 +1,13 @@
 {
   "name": "llamalize",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Transform any human readable alphanumeric string divided by certain characters into camel form.",
   "main": "llamalize.js",
   "support": "llamalize.support.js",
   "deploy": "llamalize.deploy.js",
   "browser": "llamalize.deploy.js",
   "scripts": {
-    "build": "babel llamalize.js -o llamalize.support.js && webpack",
+    "build": "babel llamalize.js --out-file llamalize.support.js --source-maps && webpack --progress",
     "test": "mocha llamalize-test.js"
   },
   "repository": {
@@ -29,16 +29,16 @@
   },
   "homepage": "https://github.com/volkovasystems/llamalize#readme",
   "dependencies": {
-    "babel-runtime": "^6.22.0",
-    "falzy": "^0.11.0",
-    "harden": "^0.14.0",
-    "protype": "^0.15.0",
-    "titlelize": "^0.8.0"
+    "babel-runtime": "^6.23.0",
+    "falzy": "^0.13.0",
+    "harden": "^0.16.0",
+    "protype": "^0.17.0",
+    "titlelize": "^0.9.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.22.2",
-    "babel-core": "^6.22.1",
-    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-cli": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-latest": "^6.22.0",
     "source-map-loader": "^0.1.6",
     "webpack": "^2.2.1"
