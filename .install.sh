@@ -18,4 +18,5 @@ falzy \
 harden \
 protype \
 titlelize \
---save
+--save \
+--force-latest
