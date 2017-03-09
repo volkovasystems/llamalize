@@ -787,12 +787,13 @@ caseless@~0.12.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
 
-cemento@^0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/cemento/-/cemento-0.12.0.tgz#4d32a7470b25bf4fc803c501da1deca6ed16f418"
+cemento@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/cemento/-/cemento-0.13.0.tgz#552ea265920db2c9bf38095da74841bf2fe6c646"
   dependencies:
     babel-runtime "^6.23.0"
     harden "^0.17.0"
+    kount "^0.10.0"
 
 center-align@^0.1.1:
   version "0.1.3"
@@ -1001,13 +1002,13 @@ diffie-hellman@^5.0.0:
     miller-rabin "^4.0.0"
     randombytes "^2.0.0"
 
-disdo@^0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/disdo/-/disdo-0.9.0.tgz#0b35e5d1be60ce2d29855fb06a0a1cbf1e92cbfe"
+disdo@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/disdo/-/disdo-0.10.0.tgz#1f4b050d6d40e2dd411d1f33dbe63de07f7036fe"
   dependencies:
     babel-runtime "^6.23.0"
-    falzy "^0.14.0"
-    protype "^0.18.0"
+    falzy "^0.15.0"
+    protype "^0.19.0"
 
 domain-browser@^1.1.1:
   version "1.1.7"
@@ -1100,12 +1101,12 @@ extsprintf@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.0.2.tgz#e1080e0658e300b06294990cc70e1502235fd550"
 
-falzy@^0.14.0:
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/falzy/-/falzy-0.14.0.tgz#62ac707d9fe29f339417e152316442b47e76af65"
+falzy@^0.15.0:
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/falzy/-/falzy-0.15.0.tgz#84b55479b063917de8c1dfdfc12c40b79aed8138"
   dependencies:
     babel-runtime "^6.23.0"
-    protype "^0.18.0"
+    protype "^0.19.0"
 
 filename-regex@^2.0.0:
   version "2.0.0"
@@ -1174,8 +1175,8 @@ fstream-ignore@~1.0.5:
     minimatch "^3.0.0"
 
 fstream@^1.0.0, fstream@^1.0.2, fstream@~1.0.10:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/fstream/-/fstream-1.0.10.tgz#604e8a92fe26ffd9f6fae30399d4984e1ab22822"
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/fstream/-/fstream-1.0.11.tgz#5c1fb1f117477114f0632a0eb4b71b3cb0fd3171"
   dependencies:
     graceful-fs "^4.1.2"
     inherits "~2.0.0"
@@ -1517,6 +1518,12 @@ kind-of@^3.0.2:
   dependencies:
     is-buffer "^1.0.2"
 
+kount@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/kount/-/kount-0.10.0.tgz#92f6dc18a5c8e8844e29a93aec268b58ad92f53b"
+  dependencies:
+    babel-runtime "^6.23.0"
+
 lazy-cache@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/lazy-cache/-/lazy-cache-1.0.4.tgz#a1d78fc3a50474cb80845d3b3b6e1da49a446e8e"
@@ -1695,8 +1702,8 @@ nopt@~3.0.6:
     abbrev "1"
 
 normalize-package-data@^2.3.2:
-  version "2.3.5"
-  resolved "https://registry.yarnpkg.com/normalize-package-data/-/normalize-package-data-2.3.5.tgz#8d924f142960e1777e7ffe170543631cc7cb02df"
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/normalize-package-data/-/normalize-package-data-2.3.6.tgz#498fa420c96401f787402ba21e600def9f981fff"
   dependencies:
     hosted-git-info "^2.1.4"
     is-builtin-module "^1.0.0"
@@ -1864,12 +1871,12 @@ process@^0.11.0:
   version "0.11.9"
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.9.tgz#7bd5ad21aa6253e7da8682264f1e11d11c0318c1"
 
-protype@^0.18.0:
-  version "0.18.0"
-  resolved "https://registry.yarnpkg.com/protype/-/protype-0.18.0.tgz#1c0861d71e58a146e8824382ad3aaeead69e14c3"
+protype@^0.19.0:
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/protype/-/protype-0.19.0.tgz#dbe110ca7c0e674356a8df32fbe55ff4f3a0ac45"
   dependencies:
     babel-runtime "^6.23.0"
-    cemento "^0.12.0"
+    cemento "^0.13.0"
     harden "^0.17.0"
 
 prr@~0.0.0:
@@ -2262,15 +2269,15 @@ timers-browserify@^2.0.2:
   dependencies:
     setimmediate "^1.0.4"
 
-titlelize@^0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/titlelize/-/titlelize-0.10.0.tgz#002f14538d70e933fd2bb36e03dcd8cfab03afc7"
+titlelize@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/titlelize/-/titlelize-0.11.0.tgz#4a9d85dc5b05c9d014ee54ee1dae9fb85cb385c4"
   dependencies:
     babel-runtime "^6.23.0"
-    disdo "^0.9.0"
-    falzy "^0.14.0"
+    disdo "^0.10.0"
+    falzy "^0.15.0"
     harden "^0.17.0"
-    protype "^0.18.0"
+    protype "^0.19.0"
 
 to-arraybuffer@^1.0.0:
   version "1.0.1"
@@ -2303,8 +2310,8 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
 
 uglify-js@^2.7.5:
-  version "2.8.7"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.8.7.tgz#e0391911507b6d2e05697a528f1686e90a11b160"
+  version "2.8.10"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.8.10.tgz#bd0be568369f7be8cad2a4161fa90ada118ef73a"
   dependencies:
     source-map "~0.5.1"
     uglify-to-browserify "~1.0.0"
@@ -2377,8 +2384,8 @@ watchpack@^1.2.0:
     graceful-fs "^4.1.2"
 
 webpack-sources@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-0.1.4.tgz#ccc2c817e08e5fa393239412690bb481821393cd"
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-0.1.5.tgz#aa1f3abf0f0d74db7111c40e500b84f966640750"
   dependencies:
     source-list-map "~0.1.7"
     source-map "~0.5.3"
