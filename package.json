@@ -1,6 +1,6 @@
 {
   "name": "llamalize",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "description": "Transform any human readable alphanumeric string divided by certain characters into camel form.",
   "main": "llamalize.js",
   "support": "llamalize.support.js",
@@ -31,16 +31,15 @@
   "dependencies": {
     "babel-runtime": "^6.23.0",
     "falzy": "^0.17.0",
-    "harden": "^0.21.0",
     "protype": "^0.21.0",
-    "titlelize": "^0.13.0"
+    "titlelize": "^0.14.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.0",
-    "babel-core": "^6.24.0",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-latest": "^6.24.0",
-    "source-map-loader": "^0.2.0",
-    "webpack": "^2.2.1"
+    "babel-preset-latest": "^6.24.1",
+    "source-map-loader": "^0.2.1",
+    "webpack": "^2.3.3"
   }
 }

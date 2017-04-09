@@ -44,8 +44,7 @@
               		}
               	@end-module-configuration
               		Transform any human readable alphanumeric string divided by certain
-              		characters into camel form. I named it llamalize because camelize is
-              		too mainstream. And llamas are way better
+              			characters into camel form.
               	@module-documentation:
               
               	@end-module-documentation
@@ -53,7 +52,6 @@
               	@include:
               		{
               			"falzy": "falzy",
-              			"harden": "harden",
               			"protype": "protype",
               			"titlelize": "titlelize"
               		}
@@ -61,9 +59,12 @@
               */
 
 var falzy = require("falzy");
-var harden = require("harden");
 var protype = require("protype");
 var titlelize = require("titlelize");
+
+var DROP_PATTERN = /^[0-9]+/;
+var SPACE_PATTERN = /\s+/g;
+var INFORMAL_PATTERN = /^[A-Z]/;
 
 var llamalize = function llamalize(text, formal) {
 	/*;
@@ -75,36 +76,21 @@ var llamalize = function llamalize(text, formal) {
                                                   	@end-meta-configuration
                                                   */
 
-	if (falzy(text) ||
-	!protype(text, STRING))
-	{
+	if (falzy(text) || !protype(text, STRING)) {
 		return text;
 	}
 
 	text = titlelize(text).
-	replace(llamalize.DROP_PATTERN, "").
-	replace(llamalize.SPACE_PATTERN, "");
+	replace(DROP_PATTERN, "").
+	replace(SPACE_PATTERN, "");
 
 	if (formal) {
 		return text;
 
 	} else {
-		return text.
-		replace(llamalize.INFORMAL_PATTERN,
-		function onReplace(match) {
-			return match.toLowerCase();
-		});
+		return text.replace(INFORMAL_PATTERN, function (match) {return match.toLowerCase();});
 	}
 };
-
-harden.bind(llamalize)(
-"DROP_PATTERN", /^[0-9]+/);
-
-harden.bind(llamalize)(
-"SPACE_PATTERN", /\s+/g);
-
-harden.bind(llamalize)(
-"INFORMAL_PATTERN", /^[A-Z]/);
 
 module.exports = llamalize;
 

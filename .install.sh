@@ -1,7 +1,6 @@
 yarn add \
 babel-runtime \
 falzy \
-harden \
 protype \
 titlelize \
 --save && \
@@ -15,7 +14,6 @@ webpack \
 --dev && \
 bower install \
 falzy \
-harden \
 protype \
 titlelize \
 --save \
