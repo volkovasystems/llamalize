@@ -34,10 +34,11 @@
               			"path": "llamalize/llamalize.js",
               			"module": "llamalize",
               			"author": "Richeve S. Bebedor",
-              			"contributors": [
-              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
-              			],
               			"eMail": "richeve.bebedor@gmail.com",
+              			"contributors": [
+              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+              				"Vinse Vinalon <vinsevinalon@gmail.com>"
+              			],
               			"repository": "https://github.com/volkovasystems/llamalize.git",
               			"test": "llamalize-test.js",
               			"global": true
@@ -52,14 +53,12 @@
               	@include:
               		{
               			"falzy": "falzy",
-              			"protype": "protype",
               			"titlelize": "titlelize"
               		}
               	@end-include
               */
 
 var falzy = require("falzy");
-var protype = require("protype");
 var titlelize = require("titlelize");
 
 var DROP_PATTERN = /^[0-9]+/;
@@ -76,7 +75,7 @@ var llamalize = function llamalize(text, formal) {
                                                   	@end-meta-configuration
                                                   */
 
-	if (falzy(text) || !protype(text, STRING)) {
+	if (falzy(text) || typeof text != "string") {
 		return text;
 	}
 
