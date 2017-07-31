@@ -1,34 +1,30 @@
 {
-  "name": "llamalize",
-  "version": "0.16.0",
-  "main": "llamalize.deploy.js",
-  "support": "llamalize.support.js",
-  "homepage": "https://github.com/volkovasystems/llamalize",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "description": "Transform any human readable alphanumeric string divided by certain characters into camel form.",
-  "moduleType": [
-    "globals",
-    "node"
-  ],
-  "keywords": [
-    "camelize",
-    "llamalize",
-    "camel-case-format"
-  ],
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "falzy": "^0.20.0",
-    "titlelize": "^0.17.0"
-  }
+	"name": "llamalize",
+	"version": "0.16.0",
+	"main": "llamalize.deploy.js",
+	"support": "llamalize.support.js",
+	"homepage": "https://github.com/volkovasystems/llamalize",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"description": "Transform any human readable alphanumeric string divided by certain characters into camel form.",
+	"moduleType": [
+		"globals",
+		"node"
+	],
+	"keywords": [
+		"camelize",
+		"llamalize",
+		"camel-case-format"
+	],
+	"license": "MIT",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
 }

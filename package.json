@@ -1,45 +1,52 @@
 {
-  "name": "llamalize",
-  "version": "0.16.0",
-  "description": "Transform any human readable alphanumeric string divided by certain characters into camel form.",
-  "main": "llamalize.js",
-  "support": "llamalize.support.js",
-  "deploy": "llamalize.deploy.js",
-  "browser": "llamalize.deploy.js",
-  "scripts": {
-    "build": "babel llamalize.js --out-file llamalize.support.js --source-maps && webpack --progress --display-modules",
-    "test": "mocha llamalize-test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/volkovasystems/llamalize.git"
-  },
-  "keywords": [
-    "camelize",
-    "llamalize",
-    "camel-case-format"
-  ],
-  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-  "contributors": [
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/volkovasystems/llamalize/issues"
-  },
-  "homepage": "https://github.com/volkovasystems/llamalize#readme",
-  "dependencies": {
-    "babel-runtime": "^6.23.0",
-    "falzy": "^0.20.0",
-    "titlelize": "^0.17.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.25.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-latest": "^6.24.1",
-    "source-map-loader": "^0.2.1",
-    "webpack": "^3.0.0"
-  }
+	"name": "llamalize",
+	"version": "0.16.0",
+	"description": "Transform any human readable alphanumeric string divided by certain characters into camel form.",
+	"main": "llamalize.js",
+	"support": "llamalize.support.js",
+	"deploy": "llamalize.deploy.js",
+	"browser": "llamalize.deploy.js",
+	"scripts": {
+		"pristine": "rsetmod clean && flxc execute ./.install.sh",
+		"clear": "rsetmod clean --clear",
+		"formal": "jesy apply '*.json'",
+		"build:support": "gulp --module llamalize --all",
+		"build:deploy": "webpack --config webpack.compact.js --progress --display-modules",
+		"rebuild": "npm run build:support && npm run build:deploy",
+		"build": "npm run pristine && npm run rebuild",
+		"build:test:support": "gulp --module test --all",
+		"build:test:deploy": "webpack --config webpack.test.js --progress --display-modules",
+		"build:test:bridge": "gulp --module test --bridge",
+		"build:test": "npm run build:test:support && npm run build:test:deploy && npm run build:test:bridge",
+		"test:server": "mocha test.js && mocha test.js --reporter=json > test.server.json",
+		"test:client": "./node_modules/.bin/wdio wdio.client.js",
+		"pretest": "npm run clear && npm run rebuild && npm run build:test",
+		"test": "npm run test:server && npm run test:client",
+		"posttest": "npm run formal",
+		"deploy": "npm run build && npm run build:test && npm run test:server && npm run test:client && npm run formal"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/volkovasystems/llamalize.git"
+	},
+	"keywords": [
+		"camelize",
+		"llamalize",
+		"camel-case-format"
+	],
+	"author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+	"contributors": [
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/volkovasystems/llamalize/issues"
+	},
+	"homepage": "https://github.com/volkovasystems/llamalize#readme",
+	"dependencies": {
+		"babel-runtime": "^6.25.0",
+		"falzy": "^0.23.0",
+		"titlelize": "^0.17.0"
+	}
 }
