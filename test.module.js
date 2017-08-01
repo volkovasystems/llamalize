@@ -166,7 +166,6 @@ describe( "llamalize", ( ) => {
 
 //: @end-client
 
-
 //: @bridge:
 
 describe( "llamalize", ( ) => {
@@ -211,9 +210,7 @@ describe( "llamalize", ( ) => {
 			let result = browser.url( bridgeURL ).execute(
 
 				function( ){
-
-					return <test>;
-
+					return llamalize( "helloWorld" );
 				}
 
 			).value;
