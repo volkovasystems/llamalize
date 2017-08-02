@@ -72,7 +72,7 @@ const path = require( "path" );
 //: @server:
 
 describe( "llamalize", ( ) => {
-	
+
 	describe( `"llamalize( "hello-world" )"`, ( ) => {
 		it( "should have value 'helloWorld'", ( ) => {
 
@@ -118,10 +118,10 @@ describe( "llamalize", ( ) => {
 //: @end-server
 
 
-//: @client: 
+//: @client:
 
 describe( "llamalize", ( ) => {
-	
+
 	describe( `"llamalize( "hello-world" )"`, ( ) => {
 		it( "should have value 'helloWorld'", ( ) => {
 
@@ -166,58 +166,96 @@ describe( "llamalize", ( ) => {
 
 //: @end-client
 
-
 //: @bridge:
 
 describe( "llamalize", ( ) => {
 
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( `"llamalize( 'hello-world' )"`, ( ) => {
+		it( `"should be equal to 'helloWorld'"`, ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return llamalize( "hello-world" );
+				}
+
+			).value;
+
+			assert.equal( result, "helloWorld" );
+
+		} );
+	} );
+
+
+	describe( `"llamalize( 'hello_world' )"`, ( ) => {
+		it( `"should be equal to 'helloWorld'"`, ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return llamalize( "hello_world" );
+				}
+
+			).value;
+
+			assert.equal( result, "helloWorld" );
+
+		} );
+	} );
+
+
+	describe( `"llamalize( 'helloWorld' )"`, ( ) => {
+		it( `"should be equal to 'helloWorld'"`, ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return llamalize( "helloWorld" );
+				}
+
+			).value;
+
+			assert.equal( result, "helloWorld" );
+
+		} );
+	} );
+
+
+	describe( `"llamalize( 'hello world' )"`, ( ) => {
+		it( `"should be equal to 'helloWorld'"`, ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return llamalize( "hello world" );
+				}
+
+			).value;
+
+			assert.equal( result, "helloWorld" );
+
+		} );
+	} );
 	
-	let directory = __dirname;
-	let testBridge = path.resolve( directory, "bridge.html" );
-	let bridgeURL = `file://${ testBridge }`;
 
-		describe( `"llamalize( "hello-world" )"`, ( ) => {
-		it( "should have value 'helloWorld'", ( ) => {
+	describe( `"llamalize( 'hello world', true )"`, ( ) => {
+		it( `"should be equal to 'HelloWorld'"`, ( ) => {
 
-			assert.equal(llamalize ( true, true ) );
+			let result = browser.url( bridgeURL ).execute(
 
-		} );
-	} );
+				function( ){
+					return llamalize( "hello world", true );
+				}
 
-	describe( `"llamalize( "hello-world" )"`, ( ) => {
-		it( "should have value 'helloWorld'" , ( ) => {
+			).value;
 
-			assert.equal(llamalize ( true, true ) );
+			assert.equal( result, "HelloWorld" );
 
 		} );
 	} );
 
-	describe( `"llamalize( "helloWorld" )"`, ( ) => {
-		it( "should have value 'helloWorld'", ( ) => {
-
-			assert.equal(llamalize ( true, true ) );
-
-		} );
-	} );
-
-	describe( `"llamalize( "hello world" )"`, ( ) => {
-		it( "should have value 'helloWorld'", ( ) => {
-
-			assert.equal(llamalize ( true, true ) );
-
-		} );
-	} );
-
-	describe( `"llamalize( "hello world", true )"`, ( ) => {
-		it( "should have value 'HelloWorld'", ( ) => {
-
-			assert.equal(llamalize ( true, true ) );
-
-		} );
-	} );
-
-	
-	
 } );
 
 //: @end-bridge

@@ -26,5 +26,12 @@
 		"bower_components",
 		"test",
 		"tests"
-	]
+	],
+	"resolutions": {
+		"falzy": "^0.23.0"
+	},
+	"dependencies": {
+		"falzy": "^0.23.0",
+		"titlelize": "^0.17.0"
+	}
 }

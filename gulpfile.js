@@ -78,18 +78,18 @@ gulp.task("bridge", function formatBridge() {
 		.pipe(rename((path) => {
 			path.basename = path.basename.replace(".module", ".bridge");
 			return path;
-		}))
-		.pipe(replace(negateBridgePattern, ""))
-		.pipe(replace(serverPattern, ""))
-		.pipe(replace(clientPattern, ""))
-		.pipe(replace(ignoreOpenPattern, "//: @ignore:\n/*"))
-		.pipe(replace(ignoreClosePattern, "*/\n//: @end-ignore"))
-		.pipe(sourcemap.init())
-		.pipe(babel())
-		.pipe(sourcemap.write("./"))
-		.pipe(replace(ignoreOpenCommentPattern, "//: @ignore:"))
-		.pipe(replace(ignoreCloseCommentPattern, "//: @end-ignore"))
-		.pipe(changed("./", {
+		} ) )
+		.pipe( replace( negateBridgePattern, "" ) )
+		.pipe( replace( serverPattern, "" ) )
+		.pipe( replace( clientPattern, "" ) )
+		.pipe( replace( ignoreOpenPattern, "//: @ignore:\n/*" ) )
+		.pipe( replace( ignoreClosePattern, "*/\n//: @end-ignore" ) )
+		.pipe( sourcemap.init( ) )
+		.pipe( babel( ) )
+		.pipe( sourcemap.write( "./" ) )
+		.pipe( replace( ignoreOpenCommentPattern, "//: @ignore:" ) )
+		.pipe( replace( ignoreCloseCommentPattern, "//: @end-ignore" ) )
+		.pipe( changed( "./", {
 			"hasChanged": changed.compareContents,
 		}))
 		.pipe(debug({ "title": "Bridge File Done:" }))
