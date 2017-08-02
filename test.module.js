@@ -188,6 +188,7 @@ describe( "llamalize", ( ) => {
 		} );
 	} );
 
+
 	describe( `"llamalize( 'hello_world' )"`, ( ) => {
 		it( `"should be equal to 'helloWorld'"`, ( ) => {
 
@@ -203,6 +204,7 @@ describe( "llamalize", ( ) => {
 
 		} );
 	} );
+
 
 	describe( `"llamalize( 'helloWorld' )"`, ( ) => {
 		it( `"should be equal to 'helloWorld'"`, ( ) => {
@@ -220,6 +222,7 @@ describe( "llamalize", ( ) => {
 		} );
 	} );
 
+
 	describe( `"llamalize( 'hello world' )"`, ( ) => {
 		it( `"should be equal to 'helloWorld'"`, ( ) => {
 
@@ -235,6 +238,7 @@ describe( "llamalize", ( ) => {
 
 		} );
 	} );
+	
 
 	describe( `"llamalize( 'hello world', true )"`, ( ) => {
 		it( `"should be equal to 'HelloWorld'"`, ( ) => {
