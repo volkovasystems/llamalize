@@ -73,44 +73,52 @@ const path = require( "path" );
 
 describe( "llamalize", ( ) => {
 
-	describe( "`llamalize( 'hello-world' )`", ( ) => {
-		it( "should be equal to 'helloWorld'", ( ) => {
+	describe( "llamalize", ( ) => {
 
-			assert.equal( llamalize( "hello-world" ), "helloWorld" );
+		describe( "`llamalize( 'hello-world' )`", ( ) => {
+			it( "should be equal to 'helloWorld'", ( ) => {
 
+				assert.equal( llamalize( "hello-world" ), "helloWorld" );
+
+			} );
 		} );
-	} );
 
-	describe( "`llamalize( 'hello_world' )`", ( ) => {
-		it( "should be equal to 'helloWorld'" , ( ) => {
 
-			assert.equal( llamalize( "hello_world" ), "helloWorld" );
+		describe( "`llamalize( 'hello_world' )`", ( ) => {
+			it( "should be equal to 'helloWorld'", ( ) => {
 
+				assert.equal( llamalize( "hello_world" ), "helloWorld" );
+
+			} );
 		} );
-	} );
 
-	describe( "`llamalize( 'helloWorld' )`", ( ) => {
-		it( "should be equal to 'helloWorld'", ( ) => {
 
-			assert.equal( llamalize( "helloWorld" ), "helloWorld" );
+		describe( "`llamalize( 'helloWorld' )`", ( ) => {
+			it( "should be equal to 'helloWorld'", ( ) => {
 
+				assert.equal( llamalize( "helloWorld" ), "helloWorld" );
+
+			} );
 		} );
-	} );
 
-	describe( "`llamalize( 'hello world' )`", ( ) => {
-		it( "should be equal to 'helloWorld'", ( ) => {
 
-			assert.equal( llamalize( "hello world" ), "helloWorld" );
+		describe( "`llamalize( 'hello world' )`", ( ) => {
+			it( "should be equal to 'helloWorld'", ( ) => {
 
+				assert.equal( llamalize( "hello world" ), "helloWorld" );
+
+			} );
 		} );
-	} );
 
-	describe( "`llamalize( 'hello world', true )`", ( ) => {
-		it( "should be equal to 'HelloWorld'", ( ) => {
 
-			assert.equal( llamalize( "hello world", true ), "HelloWorld" );
+		describe( "`llamalize( 'hello world', true )`", ( ) => {
+			it( "should be equal to 'HelloWorld'", ( ) => {
 
+				assert.equal( llamalize( "hello world", true ), "HelloWorld" );
+
+			} );
 		} );
+
 	} );
 
 } );
@@ -121,46 +129,55 @@ describe( "llamalize", ( ) => {
 
 //: @client:
 
+
 describe( "llamalize", ( ) => {
 
-	describe( "`llamalize( 'hello-world' )`", ( ) => {
-		it( "should be equal to 'helloWorld'", ( ) => {
+	describe( "llamalize", ( ) => {
 
-			assert.equal( llamalize( "hello-world" ), "helloWorld" );
+		describe( "`llamalize( 'hello-world' )`", ( ) => {
+			it( "should be equal to 'helloWorld'", ( ) => {
 
+				assert.equal( llamalize( "hello-world" ), "helloWorld" );
+
+			} );
 		} );
-	} );
 
-	describe( "`llamalize( 'hello_world' )`", ( ) => {
-		it( "should be equal to 'helloWorld'" , ( ) => {
 
-			assert.equal( llamalize( "hello_world" ), "helloWorld" );
+		describe( "`llamalize( 'hello_world' )`", ( ) => {
+			it( "should be equal to 'helloWorld'", ( ) => {
 
+				assert.equal( llamalize( "hello_world" ), "helloWorld" );
+
+			} );
 		} );
-	} );
 
-	describe( "`llamalize( 'helloWorld' )`", ( ) => {
-		it( "should be equal to 'helloWorld'", ( ) => {
 
-			assert.equal( llamalize( "helloWorld" ), "helloWorld" );
+		describe( "`llamalize( 'helloWorld' )`", ( ) => {
+			it( "should be equal to 'helloWorld'", ( ) => {
 
+				assert.equal( llamalize( "helloWorld" ), "helloWorld" );
+
+			} );
 		} );
-	} );
 
-	describe( "`llamalize( 'hello world' )`", ( ) => {
-		it( "should be equal to 'helloWorld'", ( ) => {
 
-			assert.equal( llamalize( "hello world" ), "helloWorld" );
+		describe( "`llamalize( 'hello world' )`", ( ) => {
+			it( "should be equal to 'helloWorld'", ( ) => {
 
+				assert.equal( llamalize( "hello world" ), "helloWorld" );
+
+			} );
 		} );
-	} );
 
-	describe( "`llamalize( 'hello world', true )`", ( ) => {
-		it( "should be equal to 'HelloWorld'", ( ) => {
 
-			assert.equal( llamalize( "hello world", true ), "HelloWorld" );
+		describe( "`llamalize( 'hello world', true )`", ( ) => {
+			it( "should be equal to 'HelloWorld'", ( ) => {
 
+				assert.equal( llamalize( "hello world", true ), "HelloWorld" );
+
+			} );
 		} );
+
 	} );
 
 } );
