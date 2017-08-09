@@ -1,6 +1,6 @@
 {
   "name": "llamalize",
-  "version": "0.16.0",
+  "version": "0.17.0",
   "main": "llamalize.deploy.js",
   "support": "llamalize.support.js",
   "homepage": "https://github.com/volkovasystems/llamalize",
@@ -28,7 +28,7 @@
     "tests"
   ],
   "dependencies": {
-    "falzy": "^0.20.0",
-    "titlelize": "^0.17.0"
+    "falzy": "^0.23.0",
+    "titlelize": "^0.18.0"
   }
 }
