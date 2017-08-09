@@ -81,7 +81,7 @@ describe( "llamalize", ( ) => {
 		} );
 	} );
 
-	describe( "`llamalize( 'hello-world' )`", ( ) => {
+	describe( "`llamalize( 'hello_world' )`", ( ) => {
 		it( "should be equal to 'helloWorld'" , ( ) => {
 
 			assert.equal( llamalize( "hello_world" ), "helloWorld" );
@@ -131,7 +131,7 @@ describe( "llamalize", ( ) => {
 		} );
 	} );
 
-	describe( "`llamalize( 'hello-world' )`", ( ) => {
+	describe( "`llamalize( 'hello_world' )`", ( ) => {
 		it( "should be equal to 'helloWorld'" , ( ) => {
 
 			assert.equal( llamalize( "hello_world" ), "helloWorld" );
