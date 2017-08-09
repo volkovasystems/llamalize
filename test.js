@@ -68,48 +68,52 @@ const llamalize = require( "./llamalize.js" );
 //: @server:
 
 describe( "llamalize", ( ) => {
-	
-	describe( `"llamalize( "hello-world" )"`, ( ) => {
-		it( "should have value 'helloWorld'", ( ) => {
+
+	describe( "`llamalize( 'hello-world' )`", ( ) => {
+		it( "should be equal to 'helloWorld'", ( ) => {
 
 			assert.equal( llamalize( "hello-world" ), "helloWorld" );
 
 		} );
 	} );
 
-	describe( `"llamalize( "hello-world" )"`, ( ) => {
-		it( "should have value 'helloWorld'" , ( ) => {
+
+	describe( "`llamalize( 'hello_world' )`", ( ) => {
+		it( "should be equal to 'helloWorld'", ( ) => {
 
 			assert.equal( llamalize( "hello_world" ), "helloWorld" );
 
 		} );
 	} );
 
-	describe( `"llamalize( "helloWorld" )"`, ( ) => {
-		it( "should have value 'helloWorld'", ( ) => {
+
+	describe( "`llamalize( 'helloWorld' )`", ( ) => {
+		it( "should be equal to 'helloWorld'", ( ) => {
 
 			assert.equal( llamalize( "helloWorld" ), "helloWorld" );
 
 		} );
 	} );
 
-	describe( `"llamalize( "hello world" )"`, ( ) => {
-		it( "should have value 'helloWorld'", ( ) => {
+
+	describe( "`llamalize( 'hello world' )`", ( ) => {
+		it( "should be equal to 'helloWorld'", ( ) => {
 
 			assert.equal( llamalize( "hello world" ), "helloWorld" );
 
 		} );
 	} );
 
-	describe( `"llamalize( "hello world", true )"`, ( ) => {
-		it( "should have value 'HelloWorld'", ( ) => {
+
+	describe( "`llamalize( 'hello world', true )`", ( ) => {
+		it( "should be equal to 'HelloWorld'", ( ) => {
 
 			assert.equal( llamalize( "hello world", true ), "HelloWorld" );
 
 		} );
 	} );
-} );
 
+} );
 
 //: @end-server
 
@@ -117,24 +121,3 @@ describe( "llamalize", ( ) => {
 
 
 
-
-
-
-
-
-
-
-// const assert = require( "assert" );
-// const llamalize = require( "./llamalize.js" );
-
-// assert.equal( llamalize( "hello-world" ), "helloWorld", "should have value 'helloWorld'" );
-
-// assert.equal( llamalize( "hello_world" ), "helloWorld", "should have value 'helloWorld'" );
-
-// assert.equal( llamalize( "helloWorld" ), "helloWorld", "should have value 'helloWorld'" );
-
-// assert.equal( llamalize( "hello world" ), "helloWorld", "should have value 'helloWorld'" );
-
-// assert.equal( llamalize( "hello world", true ), "HelloWorld", "should have value 'HelloWorld'" );
-
-// console.log( "ok" );
