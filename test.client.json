@@ -4,8 +4,8 @@
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-08-09T10:40:28.381Z",
-	"end": "2017-08-09T10:41:05.457Z",
+	"start": "2017-08-23T08:41:04.157Z",
+	"end": "2017-08-23T08:41:42.447Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,100 +28,100 @@
 		{
 			"name": "llamalize",
 			"duration": 0,
-			"start": "2017-08-09T10:41:05.021Z",
+			"start": "2017-08-23T08:41:42.037Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "llamalize",
-			"duration": 258,
-			"start": "2017-08-09T10:41:05.022Z",
-			"end": "2017-08-09T10:41:05.280Z",
+			"duration": 233,
+			"start": "2017-08-23T08:41:42.037Z",
+			"end": "2017-08-23T08:41:42.270Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-08-09T10:41:05.023Z",
-					"end": "2017-08-09T10:41:05.023Z",
+					"start": "2017-08-23T08:41:42.039Z",
+					"end": "2017-08-23T08:41:42.039Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "llamalize",
 					"associatedTest": "should be equal to 'helloWorld'"
 				},
 				{
-					"start": "2017-08-09T10:41:05.111Z",
-					"end": "2017-08-09T10:41:05.111Z",
+					"start": "2017-08-23T08:41:42.119Z",
+					"end": "2017-08-23T08:41:42.119Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "llamalize",
 					"associatedTest": "should be equal to 'helloWorld'"
 				},
 				{
-					"start": "2017-08-09T10:41:05.112Z",
-					"end": "2017-08-09T10:41:05.112Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "llamalize",
-					"associatedTest": "should be equal to 'helloWorld'"
-				},
-				{
-					"start": "2017-08-09T10:41:05.156Z",
-					"end": "2017-08-09T10:41:05.156Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "llamalize",
-					"associatedTest": "should be equal to 'helloWorld'"
-				},
-				{
-					"start": "2017-08-09T10:41:05.156Z",
-					"end": "2017-08-09T10:41:05.157Z",
+					"start": "2017-08-23T08:41:42.120Z",
+					"end": "2017-08-23T08:41:42.121Z",
 					"duration": 1,
 					"title": "\"before each\" hook",
 					"associatedSuite": "llamalize",
 					"associatedTest": "should be equal to 'helloWorld'"
 				},
 				{
-					"start": "2017-08-09T10:41:05.196Z",
-					"end": "2017-08-09T10:41:05.196Z",
+					"start": "2017-08-23T08:41:42.161Z",
+					"end": "2017-08-23T08:41:42.161Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "llamalize",
 					"associatedTest": "should be equal to 'helloWorld'"
 				},
 				{
-					"start": "2017-08-09T10:41:05.197Z",
-					"end": "2017-08-09T10:41:05.197Z",
+					"start": "2017-08-23T08:41:42.161Z",
+					"end": "2017-08-23T08:41:42.162Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "llamalize",
+					"associatedTest": "should be equal to 'helloWorld'"
+				},
+				{
+					"start": "2017-08-23T08:41:42.202Z",
+					"end": "2017-08-23T08:41:42.202Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "llamalize",
+					"associatedTest": "should be equal to 'helloWorld'"
+				},
+				{
+					"start": "2017-08-23T08:41:42.203Z",
+					"end": "2017-08-23T08:41:42.203Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "llamalize",
 					"associatedTest": "should be equal to 'helloWorld'"
 				},
 				{
-					"start": "2017-08-09T10:41:05.235Z",
-					"end": "2017-08-09T10:41:05.235Z",
+					"start": "2017-08-23T08:41:42.234Z",
+					"end": "2017-08-23T08:41:42.234Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "llamalize",
 					"associatedTest": "should be equal to 'helloWorld'"
 				},
 				{
-					"start": "2017-08-09T10:41:05.236Z",
-					"end": "2017-08-09T10:41:05.236Z",
+					"start": "2017-08-23T08:41:42.237Z",
+					"end": "2017-08-23T08:41:42.237Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "llamalize",
 					"associatedTest": "should be equal to 'HelloWorld'"
 				},
 				{
-					"start": "2017-08-09T10:41:05.279Z",
-					"end": "2017-08-09T10:41:05.279Z",
-					"duration": 0,
+					"start": "2017-08-23T08:41:42.269Z",
+					"end": "2017-08-23T08:41:42.270Z",
+					"duration": 1,
 					"title": "\"after each\" hook",
 					"associatedSuite": "llamalize",
 					"associatedTest": "should be equal to 'HelloWorld'"
 				},
 				{
-					"start": "2017-08-09T10:41:05.280Z",
-					"end": "2017-08-09T10:41:05.280Z",
+					"start": "2017-08-23T08:41:42.270Z",
+					"end": "2017-08-23T08:41:42.270Z",
 					"duration": 0,
 					"title": "\"after all\" hook",
 					"associatedSuite": "llamalize"
@@ -130,15 +130,15 @@
 		},
 		{
 			"name": "`llamalize( 'hello-world' )`",
-			"duration": 90,
-			"start": "2017-08-09T10:41:05.022Z",
-			"end": "2017-08-09T10:41:05.112Z",
+			"duration": 82,
+			"start": "2017-08-23T08:41:42.038Z",
+			"end": "2017-08-23T08:41:42.120Z",
 			"tests": [
 				{
 					"name": "should be equal to 'helloWorld'",
-					"start": "2017-08-09T10:41:05.023Z",
-					"end": "2017-08-09T10:41:05.111Z",
-					"duration": 88,
+					"start": "2017-08-23T08:41:42.038Z",
+					"end": "2017-08-23T08:41:42.118Z",
+					"duration": 80,
 					"state": "pass"
 				}
 			],
@@ -146,15 +146,15 @@
 		},
 		{
 			"name": "`llamalize( 'hello_world' )`",
-			"duration": 44,
-			"start": "2017-08-09T10:41:05.112Z",
-			"end": "2017-08-09T10:41:05.156Z",
+			"duration": 41,
+			"start": "2017-08-23T08:41:42.120Z",
+			"end": "2017-08-23T08:41:42.161Z",
 			"tests": [
 				{
 					"name": "should be equal to 'helloWorld'",
-					"start": "2017-08-09T10:41:05.112Z",
-					"end": "2017-08-09T10:41:05.156Z",
-					"duration": 44,
+					"start": "2017-08-23T08:41:42.120Z",
+					"end": "2017-08-23T08:41:42.161Z",
+					"duration": 41,
 					"state": "pass"
 				}
 			],
@@ -162,14 +162,14 @@
 		},
 		{
 			"name": "`llamalize( 'helloWorld' )`",
-			"duration": 40,
-			"start": "2017-08-09T10:41:05.156Z",
-			"end": "2017-08-09T10:41:05.196Z",
+			"duration": 41,
+			"start": "2017-08-23T08:41:42.161Z",
+			"end": "2017-08-23T08:41:42.202Z",
 			"tests": [
 				{
 					"name": "should be equal to 'helloWorld'",
-					"start": "2017-08-09T10:41:05.156Z",
-					"end": "2017-08-09T10:41:05.196Z",
+					"start": "2017-08-23T08:41:42.161Z",
+					"end": "2017-08-23T08:41:42.201Z",
 					"duration": 40,
 					"state": "pass"
 				}
@@ -178,15 +178,15 @@
 		},
 		{
 			"name": "`llamalize( 'hello world' )`",
-			"duration": 39,
-			"start": "2017-08-09T10:41:05.196Z",
-			"end": "2017-08-09T10:41:05.235Z",
+			"duration": 32,
+			"start": "2017-08-23T08:41:42.202Z",
+			"end": "2017-08-23T08:41:42.234Z",
 			"tests": [
 				{
 					"name": "should be equal to 'helloWorld'",
-					"start": "2017-08-09T10:41:05.197Z",
-					"end": "2017-08-09T10:41:05.235Z",
-					"duration": 38,
+					"start": "2017-08-23T08:41:42.202Z",
+					"end": "2017-08-23T08:41:42.234Z",
+					"duration": 32,
 					"state": "pass"
 				}
 			],
@@ -194,15 +194,15 @@
 		},
 		{
 			"name": "`llamalize( 'hello world', true )`",
-			"duration": 44,
-			"start": "2017-08-09T10:41:05.235Z",
-			"end": "2017-08-09T10:41:05.279Z",
+			"duration": 35,
+			"start": "2017-08-23T08:41:42.235Z",
+			"end": "2017-08-23T08:41:42.270Z",
 			"tests": [
 				{
 					"name": "should be equal to 'HelloWorld'",
-					"start": "2017-08-09T10:41:05.236Z",
-					"end": "2017-08-09T10:41:05.279Z",
-					"duration": 43,
+					"start": "2017-08-23T08:41:42.236Z",
+					"end": "2017-08-23T08:41:42.269Z",
+					"duration": 33,
 					"state": "pass"
 				}
 			],

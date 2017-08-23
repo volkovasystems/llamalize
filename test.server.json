@@ -1,88 +1,88 @@
 {
-  "stats": {
-    "suites": 6,
-    "tests": 5,
-    "passes": 5,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-18T00:53:20.340Z",
-    "end": "2017-08-18T00:53:20.348Z",
-    "duration": 8
-  },
-  "tests": [
-    {
-      "title": "should be equal to 'helloWorld'",
-      "fullTitle": "llamalize `llamalize( 'hello-world' )` should be equal to 'helloWorld'",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 'helloWorld'",
-      "fullTitle": "llamalize `llamalize( 'hello_world' )` should be equal to 'helloWorld'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 'helloWorld'",
-      "fullTitle": "llamalize `llamalize( 'helloWorld' )` should be equal to 'helloWorld'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 'helloWorld'",
-      "fullTitle": "llamalize `llamalize( 'hello world' )` should be equal to 'helloWorld'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 'HelloWorld'",
-      "fullTitle": "llamalize `llamalize( 'hello world', true )` should be equal to 'HelloWorld'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ],
-  "pending": [],
-  "failures": [],
-  "passes": [
-    {
-      "title": "should be equal to 'helloWorld'",
-      "fullTitle": "llamalize `llamalize( 'hello-world' )` should be equal to 'helloWorld'",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 'helloWorld'",
-      "fullTitle": "llamalize `llamalize( 'hello_world' )` should be equal to 'helloWorld'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 'helloWorld'",
-      "fullTitle": "llamalize `llamalize( 'helloWorld' )` should be equal to 'helloWorld'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 'helloWorld'",
-      "fullTitle": "llamalize `llamalize( 'hello world' )` should be equal to 'helloWorld'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 'HelloWorld'",
-      "fullTitle": "llamalize `llamalize( 'hello world', true )` should be equal to 'HelloWorld'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ]
+	"stats": {
+		"suites": 6,
+		"tests": 5,
+		"passes": 5,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-23T08:41:03.008Z",
+		"end": "2017-08-23T08:41:03.014Z",
+		"duration": 6
+	},
+	"tests": [
+		{
+			"title": "should be equal to 'helloWorld'",
+			"fullTitle": "llamalize `llamalize( 'hello-world' )` should be equal to 'helloWorld'",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'helloWorld'",
+			"fullTitle": "llamalize `llamalize( 'hello_world' )` should be equal to 'helloWorld'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'helloWorld'",
+			"fullTitle": "llamalize `llamalize( 'helloWorld' )` should be equal to 'helloWorld'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'helloWorld'",
+			"fullTitle": "llamalize `llamalize( 'hello world' )` should be equal to 'helloWorld'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'HelloWorld'",
+			"fullTitle": "llamalize `llamalize( 'hello world', true )` should be equal to 'HelloWorld'",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to 'helloWorld'",
+			"fullTitle": "llamalize `llamalize( 'hello-world' )` should be equal to 'helloWorld'",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'helloWorld'",
+			"fullTitle": "llamalize `llamalize( 'hello_world' )` should be equal to 'helloWorld'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'helloWorld'",
+			"fullTitle": "llamalize `llamalize( 'helloWorld' )` should be equal to 'helloWorld'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'helloWorld'",
+			"fullTitle": "llamalize `llamalize( 'hello world' )` should be equal to 'helloWorld'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'HelloWorld'",
+			"fullTitle": "llamalize `llamalize( 'hello world', true )` should be equal to 'HelloWorld'",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }
